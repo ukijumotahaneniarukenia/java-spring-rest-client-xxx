@@ -2,8 +2,6 @@ package app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
@@ -44,11 +42,6 @@ public class NnnApplication {
 
 	private static boolean excludeOptionalEntryUrlList(String targetUrl){
 		return EXCLUDE_OPTIONAL_ENTRY_URL_LIST.stream().noneMatch(excludeUrl -> excludeUrl.equals(targetUrl));
-	}
-
-	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder builder) {
-		return builder.build();
 	}
 
 	public static String accessEntryUrl (String entryUrl) {
