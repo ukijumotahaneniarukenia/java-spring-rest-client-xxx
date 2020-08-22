@@ -1,5 +1,6 @@
 # java-spring-rest-client-xxx
 
+jsonデータからPOJO生成してURLとマッピングする型ファイルを管理して動的に実行しておしまい
 
 使い方
 
